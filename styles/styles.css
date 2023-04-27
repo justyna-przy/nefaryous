@@ -1,0 +1,606 @@
+@font-face {
+  font-family: "Tribal";
+  src: url('fonts/Tribal-eLg.ttf');
+  src: url('fonts/Tribal-eLg.ttf') format('embedded-opentype'),
+       url('fonts/Tribal-eLg.ttf') format('woff2'),
+       url('fonts/Tribal-eLg.ttf') format('woff'),
+       url('fonts/Tribal-eLg.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: "Tribal Two";
+  src: url('fonts/TribalTwo-WR4.ttf');
+  src: url('fonts/TribalTwo-WR4.ttf') format('embedded-opentype'),
+       url('fonts/TribalTwo-WR4.ttf') format('woff2'),
+       url('fonts/TribalTwo-WR4.ttf') format('woff'),
+       url('fonts/TribalTwo-WR4.ttf') format('truetype');
+
+}
+
+
+body{
+    background-image: url("../images/pinkforrest.png");
+    background-size: cover;
+    margin: 0;
+
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.home-header{
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 700px;
+  background-image: url("../images/castlenight.png");
+  background-size: cover; /*stretches the image*/
+}
+
+#about-header{
+  background-image: url("../images/castlenight.png");
+}
+
+.main-title{
+    padding: 2%;
+    margin-left: 2%;
+    float: left;
+    width: 40%;
+    display: flex;
+    vertical-align: middle;
+    font-family: 'Tribal Two', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #EBB8B8;
+}
+
+nav{
+    float: right;
+    width: 680px;
+    display: flex;
+    align-items: center;
+    color: #250B0D;
+    padding: 14px;
+
+}
+
+nav ul{
+    float: right;
+    width: 70%;
+    
+    background-color: rgba(37, 11, 13,0.5);
+    border: 1px solid #EBB8B8;
+    border-right: none;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+nav ul li{
+	list-style-type: none;
+  display: inline-flex;
+  margin: 1.5%;
+  font-size: 0.9rem;
+  padding: 0;
+  
+    
+}
+
+ul a{
+	display: block;
+	padding: 0;
+	text-decoration: none;
+	color: #EBB8B8;
+}
+
+ul a:hover{
+	color: #ff1770;
+}
+nav a{
+    width: 30%;
+    object-fit: contain;
+    float: right;
+    padding: 0;
+}
+
+nav img{
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+#logo-placeholder {
+    width: 15%;
+    height: 10%;
+    padding: 2%;
+    margin: 2%;
+}
+
+.main-title h1{
+    padding: 0;
+    margin: 0;
+}
+
+#home-main{
+  position: relative;
+  width: 100%;
+  min-height: 2000px;
+  max-height: 3000px;
+  z-index: 1;
+  margin-top: 400px;
+}
+#home-section1{
+  width:100%;
+  height: auto;
+  background: linear-gradient(to top, rgba(37, 11, 13,1), rgba(37, 11, 13, 0))
+}
+
+#intro-container{
+  width: 800px;
+  margin-left: 8%;
+  padding-bottom: 5%;
+  line-height: 1.3;
+  
+}
+
+#intro-container h1{
+  font-family: 'MedievalSharp', cursive;
+  color: #ffffff;
+}
+
+#sale-section{
+  width: 100%;
+  background-color: #250B0D;
+  text-align: center;
+  padding-top: 3%;
+  color: #EBB8B8;
+  font-family: 'MedievalSharp', cursive;
+}
+
+#sale-container{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+
+}
+
+#sale-container .product{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#home-section2{
+  width: 100%;
+  height: 1700px;
+  position: relative;
+}
+.section2{
+  width: 100%;
+  height: calc(100% / 3);
+  position: relative;
+}
+
+.section2-container{
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(to right, rgba(34, 29, 35, 0.336), rgba(34, 29, 35, 0.89), rgba(34, 29, 35, 1)); /* create the gradient with the desired colors and transparency */
+  height: 100%;
+  background-size: cover;
+}
+
+#middle{
+  background: linear-gradient(to left, rgba(34, 29, 35, 0.336), rgba(34, 29, 35, 0.89), rgba(34, 29, 35, 1)); /* create the gradient with the desired colors and transparency */
+}
+
+
+
+.section2-container img{
+  width: 100%;
+  max-height: 566.6px;
+}
+
+h2{
+  font-family: 'MedievalSharp', cursive;
+  font-weight: bold;
+  color: #ff1770;
+}
+
+p{
+  font-family: 'MedievalSharp', cursive;
+  color: #EBB8B8;
+  font-size: 1rem;
+}
+
+.overlay{
+  margin-top: 7%;
+  float: right;
+  width: 47%;
+  margin-right: 10%;
+  text-align: justify;
+  color: #ffffff;
+  font-family: 'MedievalSharp', cursive;
+  line-height: 1.5;
+
+}
+
+h4{
+  font-size: 2.5rem;
+  color: #EBB8B8;
+  text-align: left;
+}
+
+#explore{
+  margin: 0;
+}
+
+#aboutstudio{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#para2{
+  float: left;
+  margin-left: 12%;
+  margin-top: 5%;
+}
+* {box-sizing: border-box;}
+
+
+/*about page*/
+
+#about-main{
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  max-height: 2000px;
+  z-index: 1;
+  margin-top: 400px;
+}
+
+#about-section2{
+  width: 100%;
+  height: 1133px;
+  position: relative;
+}
+
+.about-section{
+  width: 100%;
+  height: calc(100% / 2);
+  position: relative;
+}
+
+/*Characters page*/
+ 
+  .character-main{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+    position: static;
+    height: auto;
+  }
+
+  .profile-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .profile{
+    position: relative;
+    float: left;
+    width: 15.57%;
+
+  }
+
+  .profile:hover img {
+    transform: scale(1.03);
+  }
+
+  .profile img{
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .character-bio{
+    width: 90%;
+    height: 40rem;
+    position: relative;
+    background-color: #250b0dbb;
+    margin: 5%;
+  }
+  .character-title{
+    text-align: center;
+    color: #EBB8B8;
+    font-family: 'MedievalSharp', cursive;
+  }
+
+  .char-image{
+    float:left;
+    width:30%;
+    margin-top: 6%;
+    margin-left: 5%;
+  }
+
+  .char-info{
+    float: right;
+    width: 50%;
+    text-align: justify;
+    margin-top: 5%;
+    margin-right: 6%;
+  }
+
+/*Merch page*/
+
+#merch-header{
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 90rem;
+  background-image: url("../images/pinkforrest.png");
+  background-size: cover; /*stretches the image*/
+}
+
+#merch-main{
+  position: relative;
+  z-index: 1;
+  margin-top: 300px;
+  padding-bottom: 5%;
+  background-image: linear-gradient(to top, rgb(22, 0, 13),  rgba(85,2,51,1), rgba(85,2,51,0)); 
+}
+
+#merch-intro{
+  width: 100%;
+  
+
+}
+
+#merch-intro p{
+  width: 100%;
+  padding: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin: 0 auto;
+  color: #EBB8B8;
+  background-color: rgba(37, 11, 13, 0.747);
+  font-size: 1.3em;
+  text-align: center;
+  font-family: 'MedievalSharp', cursive;
+  line-height: 1.3;
+}
+
+#merch-intro h1{
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-image: linear-gradient(to bottom, rgba(235, 184, 184, 0.623), rgba(235, 184, 184, 0));
+  color: #250B0D;
+  height: auto;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Tribal Two', sans-serif;
+
+}
+
+.product-container{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+    margin: auto;
+    max-width: 900px;
+    background-color: rgba(37, 11, 13, 0.466);
+    padding: 50px;
+
+}
+
+.product{
+  background-color: #ebb8b869;
+  height: auto;
+  padding: 12px;
+  align-items: center;
+}
+
+.product img{
+  width: 225px;
+}
+
+.product-name a{
+  padding-left: 5%;
+  text-decoration: none;
+  color: #250B0D;
+}
+
+.product-price p{
+  padding-left: 5%;
+  color: #3f1519;
+}
+
+
+/*explore page*/
+
+#explore-main{
+  margin-bottom: 60px;
+}
+
+.row{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 1; 
+  cursor: pointer; 
+  width: 100%;
+}
+
+.column img:hover {
+  opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+  width: 100%;
+  padding: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#expandedImg{
+  width: 100%;
+}
+
+/*general footer*/
+
+footer{
+  width: 100%;
+  height: 20%;
+  z-index: 2;
+  background-color: #140404;
+  position: relative;
+  bottom: 0;
+  overflow: hidden; /* this fixed the background color*/
+}
+
+.rightfooter{
+  float: right;
+  position: relative;
+  width: 40%; /* or some other width */
+  text-align: center;
+  
+}
+
+.studio-logo{
+  width: 50%;
+}
+
+.social-media{
+  width: 100%;
+  display: flex; /* add flexbox */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+.social-media ul{
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 5%;
+}
+.social-media li{
+  width: 10%;
+  font-size: 2em;
+  text-align: center; /* center text within li */
+  color: #ffffff;
+  list-style-type: none;
+  display: inline-flex;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+
+}
+
+.leftfooter{
+  float: left;
+  position: relative;
+  width: 650px; /* or some other width */
+  height: 125px;
+  text-align: center;
+  color: #EBB8B8;
+  margin-top: 3%;
+  
+ 
+}
+
+
+.contact{
+  width: 39.7%;
+  float: left;
+  height: 100%;
+  
+
+}
+
+.contact h3{
+  margin: 0px;
+  text-align: left;
+  margin-left: 15%;
+
+}
+
+.contact ul{
+  margin: 0px;
+}
+
+.contact li {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 0px;
+}
+
+
+.pages{
+  width: 19%;
+  float: right;
+  border-right: 1px solid rgba(255, 170, 213, 0.5);
+  padding-right: 1%;
+  margin-top: 0px;
+  height: 125px;
+  
+}
+
+.pages ul{
+  margin: 0px;
+  margin-top: 0px;
+  text-align: right;
+}
+
+.pages li {
+  list-style-type: none;
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 3%;
+  
+  
+}
+
+.pages a{
+  color: #EBB8B8;
+
+}
+
+
+
+
+

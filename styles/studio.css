@@ -1,0 +1,600 @@
+
+@media (min-width: 768px){
+  body {
+      background-color: #aaf392;
+      /*background-image: linear-gradient(to bottom, #aaf392, #4fd28a );*/
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+  }
+
+
+  #navbar{
+      background-color: #4fd28a;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: 10px; 
+      transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+      position: fixed;
+      top: 0;
+      z-index: 99;
+      margin: 0px;
+
+  }
+
+
+
+
+  #logo{
+      width: 350px;
+      display: block; /* for centering the image*/
+      margin: 0 auto;
+      transition: 0.4s;
+  }
+
+  nav{
+      padding-top: 10px;
+      text-align: center;
+  }
+
+  .topnav ul {
+      position: fixed;
+      width: 300px;
+      text-align: right;
+      top: 0;
+      right: 0;
+  }
+    
+  .topnav ul li {
+      display: inline-block;
+      margin-left: 1%;
+      margin-right: 1%;
+      width: 50px;
+      height: 50px; 
+      text-align: center; /* Center the icon horizontally */
+      line-height: 50px; /* Center the icon vertically */
+  }
+    
+  .topnav ul li a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5em;
+      width: 100%;
+      height: 100%;
+  }
+    
+  .topnav ul a:hover {
+      color: #f84606;
+  }
+
+  #navbar ul{
+      margin: 0px; 
+  }
+
+  #navbar ul li{
+      list-style-type: none;
+      display: inline-flex;
+      margin-left: 1%;
+      margin-right: 1%;
+      font-family: 'Comfortaa', cursive;
+  }
+
+  nav a{
+      display: block;
+    text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+  }
+
+
+  nav a:hover{
+      color: #f84606;
+  }
+
+  main{
+      margin: 0px;
+      margin-top: 100px;
+      width: 100%;
+      height: 1000px;
+  }
+
+  .welcome-container{
+      width: 100%;
+      height: 70%;
+      position: relative;
+  }
+
+  #bottom{
+      position: absolute;
+      width: 100%;
+      background: linear-gradient(to right, rgba(34, 29, 35, 0.336), rgba(34, 29, 35, 0.89), rgba(34, 29, 35, 1)); /* create the gradient with the desired colors and transparency */
+      height: 100%;
+      background-size: cover;
+  }
+
+  #bottom img{
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+  #welcome{
+      margin-top: 15%;
+      float: left;
+      width: 32%;
+      margin-left: 12%;
+      color: #ffffff;
+      font-size: 2.5em;
+      font-family: 'Caveat', cursive;
+      text-align: center;
+  }
+
+  #right-side{
+      margin-top: 15%;
+      float: right;
+      width: 37%;
+      margin-right: 12%;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  * {box-sizing: border-box;}
+
+  #team-container{
+      background-color: rgb(34, 29, 35);
+      width: 100%;
+      position: relative;
+      text-align: center;
+      padding-top: 3%;
+      padding-bottom: 5%;
+
+  }
+
+  #team-container h1{
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3em;
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 1%;
+  }
+
+  .team {
+    position: relative;
+    display: inline-flex;
+    width: 20%;
+    max-width: 300px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+/* hi */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(34, 29, 35);
+    background: rgba(34, 29, 35, 0.5); /* Black see-through */
+    color: #ffffff; 
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .team:hover .overlay {
+    opacity: 1;
+  }
+
+  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally 
+  @media screen and (max-width: 580px) {
+      #navbar {
+        padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens 
+      }
+  */
+  /* font-family: 'Comfortaa', cursive;
+  font-family: 'Montserrat', sans-serif;*/
+
+
+  #values-container{
+      width: 100%;
+      background-image: url("../images/city.png");
+      background-size: cover; /*stretches the image*/
+      padding-top: 5%;
+    
+  }
+
+  #core-values {
+      /* Set the container element to a flex layout */
+      display: flex;
+      /* Allow the child elements to wrap onto multiple rows */
+      flex-wrap: wrap;
+      /* Center the child elements both horizontally and vertically */
+      justify-content: center;
+      align-items: center;
+      /* Center the container element on the page using margin and width */
+      margin: auto;
+      width: 1050px;
+      height: 700px;
+    }
+    
+    .value {
+      /* Set the width and height of the circle elements */
+      width: 250px;
+      height: 250px;
+      /* Center the content of the circle elements both horizontally and vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Set the background color and border radius of the circle elements */
+      background-color: #f84606;
+      background-size: cover; /*stretches the image*/
+      border-radius: 125px;
+      /* Add margin to create space between the circle elements */
+      margin: 50px;
+      transition: 0.5s;
+    }
+    
+    #value1{
+      background-image: url("../images/value1.png");
+    }
+    #value1:hover{
+      background-image: url("../images/creativity.jpg");
+    }
+
+    #value2{
+      background-image: url("../images/value2.png");
+    }
+    #value2:hover{
+      background-image: url("../images/collaboration.jpg");
+    }
+
+    #value3{
+      background-image: url("../images/value3.png");
+    }
+    #value3:hover{
+      background-image: url("../images/innovation.jpg");
+    }
+
+    #value4{
+      background-image: url("../images/value4.png");
+    }
+    #value4:hover{
+      background-image: url("../images/playerfocus.jpg");
+    }
+
+    #value5{
+      background-image: url("../images/value5.png");
+    }
+    #value5:hover{
+      background-image: url("../images/diversity.jpg");
+    }
+
+    #value6{
+      background-image: url("../images/value6.png");
+    }
+    #value6:hover{
+      background-image: url("../images/quality.jpg");
+    }
+
+    
+    
+    .value h1 {
+      text-align: center;
+      color: white;
+      font-family: 'Comfortaa', cursive;
+      font-size: 2em;
+      font-weight: bolder;
+    }
+
+    #core{
+      text-align: center;
+      color: white;
+      font-family: 'Comfortaa', cursive;
+      font-size: 4em;
+      font-weight: bolder;
+      background-color: rgba(34, 29, 35, 0.336);
+      padding: 25px;
+    }
+
+
+
+  /*community tab*/
+  #community-container{
+      background-color: rgb(34, 29, 35);
+      width: 100%;
+      position: relative;
+      text-align: center;
+      padding-top: 3%;
+      padding-bottom: 5%;
+
+  }
+
+  #community-container h1{
+      color: #ffffff;
+      font-family: 'Comfortaa', cursive;
+      font-size: 3em;
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 1%;
+  }
+
+  .community {
+    position: relative;
+    display: inline-flex;
+    width: 20%;
+    max-width: 300px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .community a{
+      position: absolute;
+      margin: 0 auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: #ffffff;
+      transition: .25s ease;
+      font-size: 5em;
+  }
+
+
+
+
+  .community .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(34, 29, 35, 0.7); /* Black see-through */
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:1;
+  }
+
+  .overlay p{
+      color: #ffffff; 
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.45em;
+      text-align: justify;
+      opacity: 0;
+      padding: 2%;
+      transition: .5s ease;
+  }
+
+  .community:hover a{
+      opacity: 0;
+  }
+
+
+  .community:hover p{
+      opacity: 1;
+  }
+
+  .community:hover .overlay {
+    opacity: 1;
+    height: 40%;
+  }
+
+
+  #contact-container{
+      width: 100%;
+      height: 300px;
+      background: rgba(34, 29, 35);
+      
+  }
+
+  #contact-container h1{
+      text-align: center;
+      color: #ffffff; 
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0px;
+
+  }
+  #contact{
+      margin-top: 2%;
+      display: flex;
+      
+  }
+
+  .split{
+      width: 50%;
+      display: inline-flex;
+      position: relative;
+      margin: 0;
+      
+  }
+
+  #social{
+      width: 560px;
+      display: inline-flex;
+      position: absolute;
+      right: 0;
+      margin: 5%;
+  }
+
+  .media{
+      background-color: #4fd28a;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .media a{
+      font-size: 50px;
+      color: #ffffff;
+  }
+
+  .media a:hover{
+      color: #f84606;
+  }
+
+  #careers{
+      float: right;
+      border-left: 3px solid #4fd28a;
+  }
+
+
+  #careers a{
+      margin: 5%;
+      width: 90%;
+      font-size: 6em;
+      text-align: center;
+      font-weight: 800;
+      font-family: 'Comfortaa', cursive;
+      text-decoration: none;
+      color: #ffffff;
+  }
+
+  #careers a:hover{
+      color: #f84606;
+  }
+
+  footer{
+      width: 100%;
+      height: 20%;
+      background-color: #4fd28a;
+      position: static;
+      overflow: hidden; /* this fixed the background color*/
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7em;
+    }
+    
+    .rightfooter{
+      float: right;
+      position: relative;
+      width: 40%; /* or some other width */
+      text-align: center;
+      
+    }
+    
+    .studio-logo{
+      width: 50%;
+      margin-bottom: 3%;
+    }
+    
+    .social-media{
+      width: 100%;
+      display: flex; /* add flexbox */
+      justify-content: center; /* center horizontally */
+      align-items: center; /* center vertically */
+    }
+    
+    .social-media ul{
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 5%;
+    }
+    .social-media li{
+      width: 10%;
+      font-size: 2em;
+      text-align: center; /* center text within li */
+      color: #ffffff;
+      list-style-type: none;
+      display: inline-flex;
+      margin-left: 1.5%;
+      margin-right: 1.5%;
+    
+    }
+    
+    .leftfooter{
+      float: left;
+      position: relative;
+      width: 650px; /* or some other width */
+      height: 125px;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 3%;
+      
+    
+    }
+    
+    
+    .contact{
+      width: 39.7%;
+      float: left;
+      height: 100%;
+      
+    
+    }
+    
+    .contact h3{
+      margin: 0px;
+      text-align: left;
+      margin-left: 15%;
+    
+    }
+    
+    .contact ul{
+      margin: 0px;
+    }
+    
+    .contact li {
+      list-style-type: none;
+      text-align: left;
+      margin-top: 3%;
+      margin-left: 0px;
+    }
+    
+    
+    .pages{
+      width: 19%;
+      float: right;
+      border-right: 1px solid rgba(255, 170, 213, 0.5);
+      padding-right: 1%;
+      margin-top: 0px;
+      height: 125px;
+      
+    }
+    
+    .pages ul{
+      margin: 0px;
+      margin-top: 0px;
+      text-align: right;
+    }
+    
+    .pages li {
+      list-style-type: none;
+      text-align: right;
+      margin-top: 0px;
+      margin-bottom: 3%;
+      
+      
+    }
+    
+    .pages a{
+      color: #ffffff;
+      text-decoration: none;
+    
+    }
+
+    .pages a:hover{
+      color: #f84606;
+    }
+}
